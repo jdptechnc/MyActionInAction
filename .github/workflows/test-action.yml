@@ -11,8 +11,8 @@ jobs:
       - name: Run my own container action
         id: action
         uses: ./
-        with:
-          who-to-greet: '@wulfland'
+        # with:
+        #   who-to-greet: '@wulfland'
       
       - name: Output the answer
         run: echo "The answer is ${{ steps.action.outputs.answer }}"
